@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bec8b49a-99e5-42b2-8fa1-00d9fef9eb6f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/others/KMP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/simple/removeElement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/simple/strStr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/diffcult/findSubstring.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/simple/lengthOfLastWord.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,24 +48,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.TwoSum.executor": "Run",
-    "Application.isPalindrome.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "go.import.settings.migrated": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/下载/CodeGeeX-2.18.0-211.zip",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "ai.codegeex.plugin.settings.ApplicationConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.TwoSum.executor&quot;: &quot;Run&quot;,
+    &quot;Application.isPalindrome.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.format.on.save.advertiser.fired&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/下载/CodeGeeX-2.18.0-211.zip&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;ai.codegeex.plugin.settings.ApplicationConfigurable&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.KMP">
+}</component>
+  <component name="RunManager" selected="Application.lengthOfLastWord">
     <configuration name="KMP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.others.KMP" />
       <module name="leetcode_train" />
@@ -81,8 +79,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="findSubstring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.diffcult.findSubstring" />
+      <module name="leetcode_train" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.diffcult.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="isPalindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.simple.isPalindrome" />
+      <module name="leetcode_train" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.simple.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="lengthOfLastWord" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.simple.lengthOfLastWord" />
       <module name="leetcode_train" />
       <extension name="coverage">
         <pattern>
@@ -109,6 +133,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.lengthOfLastWord" />
+        <item itemvalue="Application.findSubstring" />
         <item itemvalue="Application.KMP" />
         <item itemvalue="Application.isPalindrome" />
         <item itemvalue="Application.twoSum" />
@@ -124,7 +150,8 @@
       <option name="presentableId" value="Default" />
       <updated>1724922082765</updated>
       <workItem from="1729587179214" duration="1464000" />
-      <workItem from="1729588666303" duration="3679000" />
+      <workItem from="1729588666303" duration="7897000" />
+      <workItem from="1730169070226" duration="1611000" />
     </task>
     <task id="LOCAL-00001" summary="check change git repo">
       <created>1729587729538</created>
@@ -133,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1729587729538</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="chore">
+      <created>1729597042837</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1729597042837</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,7 +175,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="check change git repo" />
-    <option name="LAST_COMMIT_MESSAGE" value="check change git repo" />
+    <MESSAGE value="chore" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
@@ -154,6 +189,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/example/others/KMP.java</url>
           <line>14</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/diffcult/findSubstring.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
