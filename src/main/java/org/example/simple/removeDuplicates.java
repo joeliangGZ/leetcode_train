@@ -1,7 +1,5 @@
 package org.example.simple;
 
-import java.util.List;
-
 public class removeDuplicates {
 
     public int removeDuplicates(int[] nums) {
