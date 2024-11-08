@@ -1,30 +1,12 @@
 package org.example.simple;
 
+import org.example.simple.helper.TreeNode;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
 public class inorderTraversal {
-
-    // Definition for a binary tree node.
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode() {
-        }
-
-        TreeNode(int val) {
-            this.val = val;
-        }
-
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-    }
 
     // Function to perform inorder traversal of a binary tree
     public List<Integer> inorderTraversal(TreeNode root) {
@@ -63,9 +45,9 @@ public class inorderTraversal {
         inorderTraversal traversal = new inorderTraversal();
         // Print the result of the inorder traversal of the tree
         System.out.println(traversal.inorderTraversal(
-                traversal.new TreeNode(1,
+                new TreeNode(1,
                         null,
-                        traversal.new TreeNode(2,
-                                traversal.new TreeNode(3), null))));
+                        new TreeNode(2,
+                                new TreeNode(3), null))));
     }
 }
