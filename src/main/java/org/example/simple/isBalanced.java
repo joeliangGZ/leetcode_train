@@ -14,7 +14,9 @@ public class isBalanced {
         // left and right subtrees is less than or equal to 1
         // and if both the left and right subtrees are balanced
         return Math.abs(
-                height(root.left) - height(root.right)) <= 1;
+                height(root.left) - height(root.right)) <= 1
+                && isBalanced(root.left)
+                && isBalanced(root.right);
     }
 
     // This method returns the height of a binary tree
