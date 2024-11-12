@@ -1,6 +1,6 @@
 package org.example.simple;
 
-import org.example.simple.helper.TreeNode;
+import org.example.simple.entity.TreeNode;
 
 public class isBalanced {
 

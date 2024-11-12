@@ -1,4 +1,4 @@
-package org.example.simple.helper;
+package org.example.simple.entity;
 
 // Definition for a binary tree node.
 public class TreeNode {
