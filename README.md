@@ -21,4 +21,5 @@ LeetCode 刷题.
 18. 平衡二叉树 是指该树所有节点的左右子树的深度相差不超过 1。
 19. 二叉树的最小深度 》minDepth 递归左右，比较出最小的+1。如果left or right为null, left+right+1
 20. 路径总和 》 hasPathSum 递归判断左右，分解子问题为 sum - root.val
-21. 
+21. 杨辉三角 》 给出一个数，生成多少行的杨辉三角 》generate  curRow j = preRow j + j-1
+22. 杨辉三角 II 》 给出一个数，生成杨辉三角中第n行的值 》getRow 滚动数组思想，只用到 O(rowIndex) 的空间复杂度
