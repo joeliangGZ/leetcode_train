@@ -23,3 +23,5 @@ LeetCode 刷题.
 20. 路径总和 》 hasPathSum 递归判断左右，分解子问题为 sum - root.val
 21. 杨辉三角 》 给出一个数，生成多少行的杨辉三角 》generate  curRow j = preRow j + j-1
 22. 杨辉三角 II 》 给出一个数，生成杨辉三角中第n行的值 》getRow 滚动数组思想，只用到 O(rowIndex) 的空间复杂度
+23. 买卖股票的最好时机 》maxProfit 有小记小，有大算利，比较最大利润，更新
+24. 
