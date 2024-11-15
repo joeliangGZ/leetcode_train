@@ -24,4 +24,5 @@ LeetCode 刷题.
 21. 杨辉三角 》 给出一个数，生成多少行的杨辉三角 》generate  curRow j = preRow j + j-1
 22. 杨辉三角 II 》 给出一个数，生成杨辉三角中第n行的值 》getRow 滚动数组思想，只用到 O(rowIndex) 的空间复杂度
 23. 买卖股票的最好时机 》maxProfit 有小记小，有大算利，比较最大利润，更新
-24. 
+24. 验证回文串 》isPalindrome 正则表达式，双指针，比较头尾
+25. 
