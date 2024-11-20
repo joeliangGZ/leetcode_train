@@ -1,6 +1,8 @@
 package org.example.simple;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class generate {
@@ -13,7 +15,7 @@ public class generate {
             return result;
         }
         // Add the first row to the result list
-        result.add(List.of(1));
+        result.add(Collections.singletonList(1));
         // Loop through the remaining rows
         for (int i = 1; i < numRows; i++) {
             // Create a new list to store the current row
