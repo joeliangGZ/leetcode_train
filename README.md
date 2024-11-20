@@ -27,7 +27,11 @@ LeetCode 刷题.
 24. 验证回文串 》isPalindrome 正则表达式，双指针，比较头尾
 25. 只出现一次的数字 》singleNumber 异或运算，相同的数字异或为0，0异或任何数字为任何数字
 26. 判断链表是否有环 》hasCycle 快慢指针，快指针每次走两步，慢指针每次走一步，如果快指针追上慢指针，则说明有环
-27. 二叉树前序遍历
+27. 二叉树前序遍历 根-左-右
     28. preorderTraversal 递归，加入根节点，加入左节点，加入右节点，考虑最小子问题
     29. preorderTraversalIterate 迭代，维护栈，推到最左子树到底，加入右子树
-30. 
+    30. 中序遍历 前序遍历 迭代（使用栈）方式类似，区别只是在何时 add node.val
+31. 二叉树后序遍历 左-右-根 》postorderTraversal
+    32. lastVisited 的作用是验证 current.right 已经 visit 过了，可以加入根节点了。 
+33. 二叉树中序遍历 左-根-右 》inorderTraversal
+34. 
