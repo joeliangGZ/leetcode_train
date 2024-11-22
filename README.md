@@ -34,4 +34,7 @@ LeetCode 刷题.
 31. 二叉树后序遍历 左-右-根 》postorderTraversal
     32. lastVisited 的作用是验证 current.right 已经 visit 过了，可以加入根节点了。 
 33. 二叉树中序遍历 左-根-右 》inorderTraversal
-34. 
+34. 常量内存O(1)解决问题 possible way: 快慢指针
+    35. 正常的解决方式：O(m)的内存使用：哈希集合
+36. 相交的链表，返回相交的部分 》getIntersectionNode 
+37. 
