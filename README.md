@@ -37,4 +37,5 @@ LeetCode 刷题.
 34. 常量内存O(1)解决问题 possible way: 快慢指针
     35. 正常的解决方式：O(m)的内存使用：哈希集合
 36. 相交的链表，返回相交的部分 》getIntersectionNode 
-37. 
+37. 多数元素，找出数组中 > n/2的元素 》majorityElement（摩尔投票算法）
+38. 
