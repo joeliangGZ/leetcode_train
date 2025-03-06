@@ -1,4 +1,4 @@
-package org.example.others;
+package org.example.y_others;
 
 public class divide {
 

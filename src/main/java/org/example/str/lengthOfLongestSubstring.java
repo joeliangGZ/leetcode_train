@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * 3 - 无重复字符的最长子串 Middle
+ * 3.无重复字符的最长子串 Middle
  */
 public class lengthOfLongestSubstring {
 
