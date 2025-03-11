@@ -2,6 +2,7 @@ package org.example.array;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
@@ -13,7 +14,7 @@ public class findMedianSortedArrays {
 
         List<Integer> sortedArray = Stream
                 .concat(Arrays.stream(nums1).boxed(), Arrays.stream(nums2).boxed())
-                .sorted().toList();
+                .sorted().collect(Collectors.toList());
 
         int size = sortedArray.size();
         if (size % 2 == 1) {
