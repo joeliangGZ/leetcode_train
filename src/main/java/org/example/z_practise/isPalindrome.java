@@ -1,5 +1,8 @@
 package org.example.z_practise;
 
+/**
+ * 《5》
+ */
 public class isPalindrome {
 
     public boolean isPalindrome(int x) {
