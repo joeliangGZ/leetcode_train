@@ -1,30 +1,36 @@
 package org.example.str;
 
+import java.util.HashMap;
+import java.util.Map;
+
+/**
+ * 13. 罗马数字转整数 Easy
+ */
 public class romanToInt {
 
     public int romanToInt(String s) {
-        int result = 0;
-        for (int i = 0; i < s.length(); i++) {
-            if (i + 1 < s.length() && getValue(s.charAt(i)) < getValue(s.charAt(i + 1))) {
-                result -= getValue(s.charAt(i));
-            } else {
-                result += getValue(s.charAt(i));
-            }
-        }
-        return result;
-    }
 
-    private int getValue(char c) {
-        //return switch (c) {
-        //    case 'I' -> 1;
-        //    case 'V' -> 5;
-        //    case 'X' -> 10;
-        //    case 'L' -> 50;
-        //    case 'C' -> 100;
-        //    case 'D' -> 500;
-        //    case 'M' -> 1000;
-        //    default -> 0;
-        //};
-        return 0;
+        Map<Character, Integer> charMap = new HashMap<>();
+        charMap.put('M', 1000);
+        charMap.put('D', 500);
+        charMap.put('C', 100);
+        charMap.put('L', 50);
+        charMap.put('X', 10);
+        charMap.put('V', 5);
+        charMap.put('I', 1);
+
+        int result = 0, pre = 0;
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            Integer num = charMap.get(c);
+            result += num;
+            if (pre < num) {
+                result -= (2 * pre);
+            }
+
+            pre = num;
+        }
+
+        return result;
     }
 }
