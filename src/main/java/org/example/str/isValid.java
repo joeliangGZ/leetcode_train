@@ -2,38 +2,28 @@ package org.example.str;
 
 import java.util.Stack;
 
+/**
+ * 20. 有效的括号 Easy
+ */
 public class isValid {
 
     public boolean isValid(String s) {
-        Stack<Character> stack = new Stack<>();
-        for (char c : s.toCharArray()) {
-            if (c == '(' || c == '[' || c == '{')
-                stack.push(c);
-            else if (c == ')' && !stack.isEmpty() && stack.peek() == '(')
-                stack.pop();
-            else if (c == ']' && !stack.isEmpty() && stack.peek() == '[')
-                stack.pop();
-            else if (c == '}' && !stack.isEmpty() && stack.peek() == '{')
-                stack.pop();
-            // 第一个 char 不是括号开头的直接 false
-            else
-                return false;
+        if (s == null || s.isEmpty()) {
+            return false;
         }
 
+        Stack<Character> stack = new Stack<>();
+        for (char c : s.toCharArray()) {
+            if (c == '(') {
+                stack.push(')');
+            } else if (c == '[') {
+                stack.push(']');
+            } else if (c == '{') {
+                stack.push('}');
+            } else if (stack.isEmpty() || stack.pop() != c) {
+                return false;
+            }
+        }
         return stack.isEmpty();
-    }
-
-    public static void main(String[] args) {
-        isValid isValid = new isValid();
-//        System.out.println(isValid.isValid("()"));
-//        System.out.println(isValid.isValid("()[]{}"));
-//        System.out.println(isValid.isValid("(]"));
-//        System.out.println(isValid.isValid("([])"));
-//        System.out.println(isValid.isValid(""));
-
-        // 带有非括号的字符都会直接 false
-        System.out.println(isValid.isValid("123"));
-        System.out.println(isValid.isValid("(123"));
-        System.out.println(isValid.isValid("({123})"));
     }
 }
