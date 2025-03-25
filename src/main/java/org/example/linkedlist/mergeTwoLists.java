@@ -2,14 +2,19 @@ package org.example.linkedlist;
 
 import org.example.entity.ListNode;
 
+/**
+ * 21. 合并两个有序链表 Easy
+ */
 public class mergeTwoLists {
 
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+
         ListNode dummy = new ListNode(0);
         ListNode current = dummy;
 
         while (list1 != null && list2 != null) {
-            if (list1.val < list2.val) {
+
+            if (list1.val <= list2.val) {
                 current.next = list1;
                 list1 = list1.next;
             } else {
@@ -19,27 +24,9 @@ public class mergeTwoLists {
             current = current.next;
         }
 
-        if (list1 != null) {
-            current.next = list1;
-        }
-
-        if (list2 != null) {
-            current.next = list2;
-        }
+        if (list1 != null) current.next = list1;
+        if (list2 != null) current.next = list2;
 
         return dummy.next;
     }
-
-    public static void main(String[] args) {
-        mergeTwoLists mergeTwoLists = new mergeTwoLists();
-        ListNode listNode = mergeTwoLists.mergeTwoLists(
-                new ListNode(1, new ListNode(2, new ListNode(4))),
-                new ListNode(1, new ListNode(3, new ListNode(4))));
-        while (listNode != null) {
-            System.out.println(listNode);
-            listNode = listNode.next;
-        }
-
-    }
 }
-
